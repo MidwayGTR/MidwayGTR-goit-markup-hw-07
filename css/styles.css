@@ -130,11 +130,11 @@ img {
     color: var(--acent-cl);
 }
 
-.logo--header {
+.logo__header {
     margin-right: 93px;
 }
 
-.logo--accent {
+.logo__accent {
     color: var(--second-cl);
 }
 
