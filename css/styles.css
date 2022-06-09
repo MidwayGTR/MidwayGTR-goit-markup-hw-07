@@ -116,14 +116,9 @@ img {
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-conteiner {
+.conteiner--flex {
     display: flex;
     align-items: center;
-
-}
-
-.header-logo {
-    margin-right: 93px;
 }
 
 .logo {
@@ -135,26 +130,30 @@ img {
     color: var(--acent-cl);
 }
 
-.logo-accent {
+.logo--header {
+    margin-right: 93px;
+}
+
+.logo--accent {
     color: var(--second-cl);
 }
 
 /* navigation */
-.nav-list {
+.navigation__list {
     display: flex;
     align-items: center;
 }
 
-.nav-item {
+.navigation__item {
     margin-right: 50px;
     position: relative;
 }
 
-.nav-item:last-child {
+.navigation__item:last-child {
     margin-right: 0px;
 }
 
-.navigation-link {
+.navigation__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -167,18 +166,16 @@ img {
     transition: color var(--animation);
 }
 
-.smartphone-icon:hover,
-.smartphone-icon:focus,
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation__link--current {
     color: var(--acent-cl);
 }
 
-.current {
+.navigation__link:hover,
+.navigation__link:focus {
     color: var(--acent-cl);
 }
 
-.current::after {
+.navigation__link--current::after {
     content: "";
     display: block;
     position: absolute;
@@ -198,7 +195,11 @@ img {
     justify-content: center;
 }
 
-.contact-link {
+.contact-list__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-list__link {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -208,27 +209,25 @@ img {
     letter-spacing: 0.02em;
     align-items: center;
     color: var(--main-cl);
-
     transition: color var(--animation);
-
 }
 
-.contact-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-
-.contact-link:hover,
-.contact-link:focus {
+.contact-list__icon:hover,
+.contact-list__icon:focus {
     color: var(--acent-cl);
 }
 
-.contact-link:hover .header-icon,
-.contact-link:focus .header-icon {
+.contact-list__link:hover,
+.contact-list__link:focus {
+    color: var(--acent-cl);
+}
+
+.contact-list__link:hover .contact-list__icon,
+.contact-list__link:focus .contact-list__icon {
     fill: var(--acent-cl);
 }
 
-.header-icon {
+.contact-list__icon {
     margin-right: 10px;
     fill: #757575;
 
