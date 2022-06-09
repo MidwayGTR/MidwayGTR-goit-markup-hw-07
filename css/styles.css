@@ -188,18 +188,18 @@ img {
     border-radius: 2px;
 }
 
-.contact-list {
+.contacts {
     display: flex;
     align-items: center;
     margin-left: auto;
     justify-content: center;
 }
 
-.contact-list__item:not(:last-child) {
+.contacts__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.contact-list__link {
+.contacts__link {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -212,22 +212,22 @@ img {
     transition: color var(--animation);
 }
 
-.contact-list__icon:hover,
-.contact-list__icon:focus {
+.contacts__icon:hover,
+.contacts__icon:focus {
     color: var(--acent-cl);
 }
 
-.contact-list__link:hover,
-.contact-list__link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--acent-cl);
 }
 
-.contact-list__link:hover .contact-list__icon,
-.contact-list__link:focus .contact-list__icon {
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
     fill: var(--acent-cl);
 }
 
-.contact-list__icon {
+.contacts__icon {
     margin-right: 10px;
     fill: #757575;
 
