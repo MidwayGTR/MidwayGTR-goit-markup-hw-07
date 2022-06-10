@@ -610,7 +610,7 @@ img {
     position: relative;
 } */
 
-.work__name {
+/* .work__name {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -641,38 +641,38 @@ img {
     letter-spacing: 0.03em;
 
     color: var(--second-cl);
-}
+} */
 
 /* Team section */
-.team-section {
+/* .team {
     background-color: var(--second-bg-cl);
-}
+} */
 
 
-.team-list {
+/* .team-list {
     display: flex;
 
-}
+} */
 
-.team-item {
+/* .team__item {
     width: calc((100%-90)/4);
     margin-right: 30px;
 
     background-color: var(--main-bg-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
+} */
 
-.team-item:nth-child(4n) {
+/* .team__item:nth-child(4n) {
     margin-right: 0px;
 }
 
-.team-name {
+.team__name {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.team-subtitle {
+.team__subtitle {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -681,9 +681,9 @@ img {
 
     color: var(--second-cl);
 
-}
+} */
 
-.team-text {
+/* .team__position {
     margin-top: 10px;
 
     font-size: 16px;
@@ -692,17 +692,21 @@ img {
     letter-spacing: 0.03em;
 
     color: var(--main-cl);
-}
+} */
 
 /* social icons */
-.social {
+/* .social {
     display: flex;
     margin-top: 16px;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.social-link {
+/* .social__item:not(:last-child) {
+    margin-right: 10px;
+} */
+
+/* .social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -715,25 +719,23 @@ img {
     border-radius: 50%;
     transition: background-color var(--animation);
 
-}
+} */
 
-.social-link:hover,
-.social-link:focus {
+/* .social__link:hover,
+.social__link:focus {
     background-color: #2196F3;
-}
+} */
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+/* .social__link:hover .social__icon,
+.social__link:focus .social__icon {
     fill: #ffffff;
-}
+} */
 
-.social-item:not(:last-child) {
-    margin-right: 10px;
-}
 
-.social-icon {
+
+/* .social__icon {
     fill: #AFB1B8;
-}
+} */
 
 /* client-section */
 

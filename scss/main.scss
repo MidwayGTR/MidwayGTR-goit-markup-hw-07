@@ -9,6 +9,8 @@
 @import './base/title';
 @import './base/card-set';
 
+
+
 // components
 // header
 @import './components/logo';
@@ -19,9 +21,14 @@
 @import './components/_button';
 @import './components/modal-window';
 @import './components/_forms';
-// Specific section
+// Specific-section
 @import './components/specific-section';
-// work section
+// work-section
 @import './components/work-section';
+// team-section
+@import './components/team-section';
+@import './components/socials';
+
+
 
 // layouts
