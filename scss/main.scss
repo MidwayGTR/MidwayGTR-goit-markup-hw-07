@@ -12,23 +12,22 @@
 
 
 // components
-// header
+
 @import './components/logo';
 @import './components/navigation';
 @import './components/contacts';
-// hero
-@import './components/hero';
 @import './components/_button';
 @import './components/modal-window';
 @import './components/_forms';
-// Specific-section
-@import './components/specific-section';
-// work-section
-@import './components/work-section';
-// team-section
-@import './components/team-section';
 @import './components/socials';
-
+@import './components/address';
 
 
 // layouts
+
+@import './layouts/hero';
+@import './layouts/specific-section';
+@import './layouts/work-section';
+@import './layouts/team-section';
+@import './layouts/client-section';
+@import './layouts/footer-section';

@@ -35,5 +35,57 @@
     &__icon {
         fill: #AFB1B8;
     }
+}
 
+// footer
+// join-group
+.join-group {
+    margin-right: 93px;
+
+    &__subtitle {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 44px;
+        height: 44px;
+
+        background-color: rgba(255, 255, 255, 0.1);
+
+        border-radius: 50%;
+        transition: background-color var(--animation);
+
+        &:hover,
+        &:focus {
+            background-color: #2196F3;
+        }
+
+        &:hover .join-group__icon,
+        &:focus .join-group__icon {
+            fill: #ffffff;
+        }
+    }
+
+    &__icon {
+        fill: #ffffff;
+    }
 }
