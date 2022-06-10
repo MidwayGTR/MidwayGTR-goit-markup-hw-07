@@ -16,15 +16,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- custom styles -->
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="conteiner conteiner--flex">
-            <a class="logo logo__header" href="./index.html" lang="en">Web<span class="logo__accent">Studio</span></a>
+        <div class="conteiner header__conteiner">
+            <a class="logo header__logo" href="./index.html" lang="en" aria-label="Логотип сайту">Web<span
+                    class="logo__accent">Studio</span></a>
             <nav class="navigation">
                 <ul class="list navigation__list">
                     <li class="navigation__item">
@@ -41,18 +43,19 @@
 
             <ul class="list contacts">
                 <li class="contacts__item">
-                    <a class="link contacts__link" href="mailto:info@devstudio.com"> <svg class="contacts__icon"
-                            width="16" height="12">
+                    <a class="link contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon" width="16" height="12">
                             <use href="./images/sprite.svg#mail"></use>
-                        </svg> info@devstudio.com</a>
+                        </svg> info@devstudio.com
+                    </a>
                 </li>
 
-                <li class="contacts__item"">
+                <li class="contacts__item">
                     <a class=" link contacts__link" href="tel:+380961111111">
-                    <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/sprite.svg#smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
+                        <svg class="contacts__icon" width="10" height="16">
+                            <use href="./images/sprite.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
                     </a>
                 </li>
             </ul>
@@ -60,81 +63,60 @@
     </header>
     <main>
         <!-- Hero section -->
-        <section class="hero hero-section">
+        <section class="hero">
             <div class="conteiner">
-                <h1 class="hero-title">
-                    Эффективные решения<br /> для вашего бизнеса
+                <h1 class="hero-title">Эффективные решения<br /> для вашего бизнеса
                 </h1>
                 <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+
+                <!-- Modal window -->
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal-wraper">
                         <form class="modal-form" name="label-form">
-
-
-                            <b class="modal-subtitle">Оставьте свои данные, мы вам перезвоним</b>
+                            <b class="modal-form__subtitle">Оставьте свои данные, мы вам перезвоним</b>
                             <!-- Данні кліента -->
-
-                            <label class="form-group">
-                                <span class="form-label">Имя</span>
-                                <input class="form-input" type="text" id="user-name" name="user-name" autofocus>
-                                <svg class="form-icon" width="18" height="18">
+                            <label class="modal-form__group">
+                                <span class="modal-form__label">Имя</span>
+                                <input class="modal-form__input" type="text" id="user-name" name="user-name" autofocus>
+                                <svg class="modal-form__icon" width="18" height="18">
                                     <use href="./images/form-sprite.svg#person"></use>
                                 </svg>
                             </label>
-
-
-
-                            <label class="form-group">
-                                <span class="form-label">Телефон</span>
-                                <input class="form-input" type="tel" id="user-tel" name="user-tel">
-
-                                <svg class="form-icon" width="18" height="18">
+                            <label class="modal-form__group">
+                                <span class="modal-form__label">Телефон</span>
+                                <input class="modal-form__input" type="tel" id="user-tel" name="user-tel">
+                                <svg class="modal-form__icon" width="18" height="18">
                                     <use href="./images/form-sprite.svg#phone"></use>
                                 </svg>
-
                             </label>
-
-
-
-                            <label class="form-group">
-                                <span class="form-label">Почта</span>
-                                <input class="form-input" type="email" id="user-mail" name="user-mail">
-
-                                <svg class="form-icon" width="18" height="18">
+                            <label class="modal-form__group">
+                                <span class="modal-form__label">Почта</span>
+                                <input class="modal-form__input" type="email" id="user-mail" name="user-mail">
+                                <svg class="modal-form__icon" width="18" height="18">
                                     <use href="./images/form-sprite.svg#mail"></use>
                                 </svg>
-
                             </label>
-
-
-
-                            <label class="form-group coment">
-                                <span class="form-label">Комментарий</span>
-                                <textarea class="form-coment" name="user-coment" id="user-coment" cols="30" rows="10"
-                                    placeholder="Введите текст"></textarea>
+                            <label class="modal-form__group coment">
+                                <span class="modal-form__label">Комментарий</span>
+                                <textarea class="modal-form__coment" name="user-coment" id="user-coment" cols="30"
+                                    rows="10" placeholder="Введите текст"></textarea>
                             </label>
-
-
-
                             <!-- checkbox -->
-
-                            <label class="form-checkbox">
-                                <input class="checkbox visually-hidden" type="checkbox" name="checkbox-form">
-                                <span class="custom-checkbox">
-                                    <svg class="custom-checkbox-icon" width="16" height="15">
+                            <label class="modal-form__policy-group">
+                                <input class="modal-form__checkbox visually-hidden" type="checkbox"
+                                    name="checkbox-form">
+                                <span class="modal-form__custom-checkbox">
+                                    <svg class="modal-form__custom-checkbox-icon" width="16" height="15">
                                         <use href="./images/form-sprite.svg#icon-check"></use>
                                     </svg>
                                 </span>
-                                <span class="form-label-checkbox">Соглашаюсь с рассылкой и принимаю
-                                    <a class="link-checkbox" href="http://">Условия договора</a>
+                                <span class="modal-form__label-checkbox">Соглашаюсь с рассылкой и принимаю
+                                    <a class="modal-form__link-checkbox" href="http://">Условия договора</a>
                                 </span>
                             </label>
-
                             <label class="form-modal-btn">
                                 <button class="btn" type="submit">Отправить</button>
                             </label>
-
-
                             <button class="close-btn" data-modal-close>
                                 <svg width="18px" height="18px">
                                     <use href="./images/sprite.svg#close-btn"></use>
@@ -453,7 +435,7 @@
     <footer class="footer-section">
         <div class="conteiner footer">
             <div class="address-block">
-                <a class="logo" href="./index.html" lang="en">Web<span class="footer-logo">Studio</span></a>
+                <a class="logo" href="./index.html" lang="en">Web<span class="footer__logo">Studio</span></a>
                 <div class="contact">
                     <address class="foot-address">
                         <ul class="footer-list list">
