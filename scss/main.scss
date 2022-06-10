@@ -6,6 +6,7 @@
 @import './base/common';
 @import './base/reset';
 @import './base/conteiner';
+@import './base/title';
 @import './base/card-set';
 
 // components
@@ -19,8 +20,8 @@
 @import './components/modal-window';
 @import './components/_forms';
 // Specific section
-
-
-
+@import './components/specific-section';
+// work section
+@import './components/work-section';
 
 // layouts
