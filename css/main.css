@@ -801,6 +801,19 @@ img {
   color: #FFFFFF;
 }
 
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .hero {
   max-width: 1600px;
   height: 600px;
