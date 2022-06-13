@@ -11,6 +11,11 @@ body {
 
 .section {
 
+    @include mq(mobile-only) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     // phone screen
     @include mq(mobile) {
         padding-top: 60px;
@@ -39,5 +44,16 @@ body {
         letter-spacing: 0.03em;
 
         color: var(--second-cl);
+
+
+        @include mq(not-desktop) {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.18;
+
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+
     }
 }
