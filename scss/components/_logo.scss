@@ -6,6 +6,13 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--acent-cl);
+
+
+    @include mq(mobile-only) {
+        justify-content: center;
+    }
+
+
 }
 
 .header__logo {

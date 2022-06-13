@@ -42,6 +42,16 @@
 .join-group {
     margin-right: 93px;
 
+    @include mq(mobile-only) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    @include mq(tablet-only) {
+        margin-right: 0;
+    }
+
     &__subtitle {
         margin-bottom: 20px;
         font-weight: 700;
@@ -51,10 +61,24 @@
         text-transform: uppercase;
 
         color: #FFFFFF;
+
+        @include mq(mobile-only) {
+            text-align: center;
+            width: 100%;
+            margin-right: 0;
+        }
+
     }
 
     &__list {
         display: flex;
+
+        @include mq(mobile-only) {
+            justify-content: center;
+
+        }
+
+
     }
 
     &__item:not(:last-child) {

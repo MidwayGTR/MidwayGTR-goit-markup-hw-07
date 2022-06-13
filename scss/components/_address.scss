@@ -1,10 +1,26 @@
 .footer-address {
     margin-right: 70px;
+
+
+    @include mq(mobile-only) {
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+
+    @include mq(tablet-only) {
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+
+
 }
 
-.footer-logo {
-    color: var(--bg-cl);
-}
+
+
+
 
 .contact {
     margin-top: 20px;

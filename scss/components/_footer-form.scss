@@ -1,6 +1,18 @@
 .subscribe {
     width: 570px;
 
+    @include mq(mobile-only) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    @include mq(tablet-only) {
+        width: auto;
+    }
+
+
+
     &__subtitle {
         margin-bottom: 20px;
         font-weight: 700;
@@ -10,12 +22,39 @@
         text-transform: uppercase;
 
         color: #FFFFFF;
+
+        @include mq(mobile-only) {
+            width: 100%;
+            text-align: center;
+        }
+
+        @include mq(tablet) {
+            idth: 100%;
+            text-align: center;
+        }
     }
 
     &__form {
         margin-top: 20px;
 
         display: flex;
+
+        @include mq(mobile-only) {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            margin-top: 0;
+
+        }
+
+        @include mq(tablet-only) {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            margin-top: 0;
+
+        }
+
     }
 
     &__input {
@@ -40,6 +79,20 @@
         border-radius: 4px;
 
         outline: transparent;
+
+        @include mq(mobile-only) {
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+
+        @include mq(tablet-only) {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
     }
 
     &__input::placeholder {
@@ -61,11 +114,25 @@
     }
 
     &__btn {
+        position: relative;
+
         display: block;
         width: 200px;
         padding: 10px 10px 10px 29px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+
+        @include mq(mobile-only) {
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        @include mq(tablet) {
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+
     }
 
     &__icon-send {
@@ -74,6 +141,18 @@
         height: 24px;
         bottom: 13px;
         right: 28px;
+
+        @include mq(mobile-only) {
+            position: absolute;
+            bottom: 11px;
+            right: 151px;
+        }
+
+        @include mq(tablet-only) {
+            position: absolute;
+            bottom: 11px;
+            right: 151px;
+        }
     }
 
     &__btn-name {
