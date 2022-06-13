@@ -1,14 +1,25 @@
 .client {
-    display: none;
-
-
-    // display: flex;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
 
+    @include mq(mobile-only) {
+        display: none;
+    }
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
+    &__item {
+
+        height: auto;
+
+
+        @include mq(tablet-only) {
+            width: 226px;
+        }
+
+        @include mq(desktop) {
+            width: 170px;
+        }
     }
 
     &__link {
@@ -34,6 +45,11 @@
         &:focus .client__icon {
             fill: #2196F3;
         }
+
+        @include mq(tablet-only) {
+            width: 226px;
+        }
+
     }
 
     &__icon {

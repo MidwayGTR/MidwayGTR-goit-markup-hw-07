@@ -45,6 +45,10 @@ body {
 
         color: var(--second-cl);
 
+        @include mq(mobile-only) {
+            display: none;
+        }
+
 
         @include mq(not-desktop) {
             font-weight: 700;

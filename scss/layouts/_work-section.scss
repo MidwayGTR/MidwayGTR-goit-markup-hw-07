@@ -1,6 +1,4 @@
 .work {
-    display: none;
-
 
     @include mq(mobile-only) {
         display: none;
