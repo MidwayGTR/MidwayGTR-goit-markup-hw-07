@@ -1,4 +1,5 @@
 body {
+
     font-family: var(--main-font);
     font-size: 14px;
     line-height: 1.71;
@@ -9,8 +10,24 @@ body {
 
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    // phone screen
+    @include mq(mobile) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    // tablet screen
+    @include mq(tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    // pc screen
+    @include mq(desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
 
     &__title {

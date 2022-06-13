@@ -1,9 +1,18 @@
 .specific-list {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--indent);
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
+
+
+    &__item {
+        @include mq(mobile-only) {
+            width: 450px;
+        }
+
+        @include mq(tablet-only) {
+            width: 354px;
+        }
     }
 
     &__image {
@@ -16,6 +25,14 @@
 
         background: #F5F4FA;
         border-radius: 4px;
+
+        @include mq(mobile-only) {
+            width: 100%;
+        }
+
+        @include mq(tablet-only) {
+            width: 354px;
+        }
     }
 
     &__icon {
@@ -30,6 +47,10 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--second-cl);
+
+        @include mq(mobile-only) {
+            text-align: center;
+        }
     }
 
     &__text {
@@ -38,6 +59,11 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--main-cl);
-    }
 
+
+        @include mq(mobile-only) {
+
+            width: 100%;
+        }
+    }
 }

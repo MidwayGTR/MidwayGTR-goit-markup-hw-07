@@ -1,4 +1,17 @@
 .navigation {
+    @include mq(mobile-only) {
+        display: none;
+    }
+
+    @include mq(tablet-only) {
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+
+
     &__list {
         display: flex;
         align-items: center;

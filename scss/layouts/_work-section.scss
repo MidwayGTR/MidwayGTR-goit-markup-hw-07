@@ -1,5 +1,13 @@
 .work {
+    display: none;
+
+
+    @include mq(mobile-only) {
+        display: none;
+    }
+
     padding-top: 0;
+
 
     &__list {
         display: flex;
