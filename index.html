@@ -25,8 +25,32 @@
     <!-- Header -->
     <header class="header">
         <div class="conteiner header__conteiner">
-            <a class="logo header__logo" href="./index.html" lang="en" aria-label="Логотип сайту">Web<span
-                    class="logo__accent">Studio</span></a>
+            <a class="logo header__logo" href="./index.html" lang="en" aria-controls="menu-conteiner"
+                aria-label="Логотип сайту">Web<span class="logo__accent">Studio</span></a>
+
+            <button class="btn-menu " type="button" aria-expanded="false" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-close" href="./images/mobile-menu.svg#icon-close"></use>
+                    <use class="icon-open" href="./images/mobile-menu.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-conteiner is-open" id="menu-conteiner" data-menu>
+                <nav class="navigation">
+                    <ul class="list navigation__list">
+                        <li class="navigation__item">
+                            <a class="link navigation__link navigation__link--current" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="link navigation__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="link navigation__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
             <nav class="navigation">
                 <ul class="list navigation__list">
                     <li class="navigation__item">
@@ -39,6 +63,7 @@
                         <a href="" class="link navigation__link">Контакты</a>
                     </li>
                 </ul>
+
             </nav>
 
             <ul class="list contacts">
@@ -522,4 +547,5 @@
 
     <!-- js-scripts -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>

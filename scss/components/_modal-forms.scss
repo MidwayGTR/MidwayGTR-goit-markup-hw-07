@@ -8,11 +8,15 @@
 
         font-weight: 700;
         font-size: 20px;
-        line-height: 23px;
+        line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
 
         color: #212121;
+
+        @include mq(not-desktop) {
+            line-height: 1.5;
+        }
     }
 
     &__group {
@@ -128,6 +132,11 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #757575;
+
+        @include mq(not-desktop) {
+            font-size: 12px;
+            line-height: 1.17;
+        }
     }
 
     &__link-checkbox {
@@ -135,6 +144,11 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #2196F3;
+
+        @include mq(not-desktop) {
+            font-size: 12px;
+            line-height: 1.17;
+        }
     }
 }
 
